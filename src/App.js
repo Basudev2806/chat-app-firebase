@@ -8,6 +8,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import { Toaster } from 'react-hot-toast';
 import Chat from './pages/Chat/Chat';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
           />
           {/* <Route path='*' element={<PageNotFound />} /> */}
         </Routes>
+        <Analytics />
+        <SpeedInsights />
         <Toaster />
       </UserAuthContextProvider>
     </Router>
