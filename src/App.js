@@ -7,6 +7,7 @@ import { DrawerContextProvider } from './context/drawerContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import { Toaster } from 'react-hot-toast';
 import Chat from './pages/Chat/Chat';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
